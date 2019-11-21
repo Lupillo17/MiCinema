@@ -1,0 +1,26 @@
+<?php 
+	if(!empty($_POST)){
+        include 'conexion.php';
+        $sentencia=mysqli_prepare($conexion,"SELECT correo, contrasena FROM usuarios where correo=? AND contrasena=?");
+        mysqli_stmt_bind_param($sentencia,'ss',$c,$p);
+        $c=$_POST['txt_usuario'];
+        $p=hash('sha512',$_POST['txt_password']);
+        mysqli_stmt_execute($sentencia);
+        mysqli_stmt_bind_result($sentencia,$res1,$res2);
+        $arg=array();
+        while(mysqli_stmt_fetch($sentencia)){
+            array_push($arg,$res1,$res2);
+        }
+        mysqli_stmt_close($sentencia);
+        /*if($sentencia->execute()){
+            bind_result($sentencia,$res);
+            echo json_encode($res);
+//            var_dump($res->fetch_all());
+            $sentencia->close();
+            $conexion->close();
+        }else{
+            echo 'Error: '. $sentencia->error;
+        }*/
+        
+    }
+?>

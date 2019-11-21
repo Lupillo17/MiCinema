@@ -1,0 +1,103 @@
+*{
+	margin:0px;
+	padding: 0px;
+}
+
+
+
+form {
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 35px;
+	background-color: #F8F8F8;
+    border-style: solid;
+    border-width: 1px;
+    border-color: lightgray;
+    min-width: 410px;
+    max-width: 480px;
+    overflow-x: hidden;
+    border-radius: 5px;
+    width: 50%;
+    padding-top: 9px;
+    padding-bottom: 9px;
+}
+
+b{
+	width: 30%;
+	margin-left: 6px;
+	margin-right: auto;
+	font-family: helvetica;
+	font-size: 15px;
+	display: inline-block;
+	margin-top: 8px;
+	text-align: right;
+}
+
+input{
+	font-family: helvetica;
+	font-size: 14px;
+	height: 20px;
+	width: 64%;
+	border-radius: 2px;
+	
+	padding:0px 3px; 
+}
+
+#url_pelicula{
+	height: auto;
+	width: 66%;
+	padding-left: 0px;
+}
+#url_imagen{
+	height: auto;
+	width: 66%;
+	padding-left: 0px;
+}
+
+select{
+	font-family: helvetica;
+	font-size: 14px;
+	height: auto;
+	width: 30%;
+}
+
+#txt_descripcion{
+	font-size: 14px;
+	font-family: helvetica;
+	min-width: 66%;
+	max-width: 66%;
+	min-height: 200px;
+	max-height: 300px;
+	vertical-align: top;
+	margin-top: 6px;
+}
+
+#btnGuardarCancelar{
+	width: 98%;
+	margin-top: 6px;
+	margin-left: 1%;
+	margin-right: 1%;
+}
+
+#btnGuardar{
+	width: 48%;
+	height: 30px;
+	border-radius: 3px;
+	color: black;
+}
+#btnGuardar:hover{
+	cursor: pointer;
+}
+
+#btnCancelar{
+	width: 48%;
+	float: right;
+	height: 30px;
+	border-radius: 3px;
+}
+#btnCancelar:hover{
+	cursor: pointer;
+}
+
+
+

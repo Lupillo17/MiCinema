@@ -1,0 +1,289 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-color: #EFEFEF;
+}
+
+#contenidoBody{
+    width: 80%;
+    max-width: 800px;
+    min-width: 620px;
+    margin: 0 auto;
+}
+
+#menu{
+    margin: 0px auto;
+    width: 100%;
+    height: 30px;
+}
+
+#menu ul{
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    overflow-x: hidden;
+    overflow-y: hidden;
+}
+#menu ul li{
+    list-style: none;
+    display: inline-block;
+    height: 100%;
+    background-color: rgb(66,103,178);
+    border-right-style: ridge;
+    border-right-width: 1px;
+    width: 25%; 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#menu li a:hover{
+    border-radius: 2px;
+    background-color: rgb(59,93,160);
+    
+}
+#menu li a{
+    text-decoration: none;
+    font-family: helvetica;
+    font-size: 14px;
+    color: white;
+    display: block;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#buscador {
+    margin-top: 8px;
+    margin-bottom: 8px;
+    float: right;
+    display: flex;
+}
+
+#txtBuscador{
+    height: 30px;
+    width: 230px;
+    font-family: helvetica;
+    font-size: 14px;
+    margin-right: 4px;
+    border-radius: 4px;
+    padding-left: 4px;
+}
+
+#btnBuscar{
+    font-family: helvetica;
+    font-size: 14px;
+    cursor: pointer;
+    background-color: rgb(66,103,178);
+    color: white;
+    border:0px;
+    width: 100px;
+}
+
+#btnBuscar:hover{
+    background-color: rgb(59,93,160);
+}
+
+
+
+#listaPeliculas{
+    clear: both;
+    background-color: #F8F8F8;
+    border-style: solid;
+    border-width: 1px;
+    border-color: lightgray;
+    border-top-color: gray;
+    border-top-width: 2px;
+}
+
+.itemPeliculas{
+    display: flex;
+    align-items: center;
+    margin:4px;
+}
+
+.itemPeliculas img{
+    width: 120px;
+    height: 150px;
+}
+
+.infoItemPelicula{
+    display: inline-block;
+    background-color: #ECECEC;
+    width: 100%;
+    margin-left: 8px;
+    margin-right: 4px;
+    border-style: inset;
+}
+.btn{
+    font-family: helvetica;
+    font-size: 14px;
+}
+
+
+
+/*Version 1*/
+#btnModificar{
+    margin-right: 4px;
+    margin-left: 4px;
+    height: 30px;
+    background-color: #4AB58B;
+    border:1px solid #5CAC8D;
+    padding: 0px 2px;
+    font-weight: ;
+    font-size: 15px;
+    color: white;
+}
+#btnModificar:hover{
+    cursor: pointer;
+    background-color: #399471;
+    border:1px solid #5CAC8D;
+}
+
+#btnEliminar{
+    height: 30px;
+    background-color: #2605EE;
+    border:1px solid #BD3DFF;
+    padding: 0px 2px;
+    font-weight: ;
+    font-size: 15px;
+    color:white;
+}
+
+#btnEliminar:hover{
+    cursor: pointer;
+    background-color: #594AB5;
+    border:1px solid #D83DFF;
+    color: white;
+}
+
+.lista{
+    display: flex;
+    justify-content: center;
+    margin-top: 8px;
+    margin-bottom: 8px;
+}
+.listItem{
+    list-style: none;
+    width: 25px;
+    height: 28px;   
+    margin-right:6px;
+}
+
+.link{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    text-decoration: none;
+    font-family: helvetica;
+    font-size: 16px;
+    font-weight: bold;
+    background-color: #5893FF;
+    border: 1px solid #4800FF;
+}
+
+.link:hover{
+    color: white;
+    background-color: #4E36FF
+}
+
+@media screen and (max-width: 956px) {
+    #btnEliminar{
+        margin-left: 4px;
+        margin-right: 40px;
+        margin-top: 3px;
+        width: 94%;
+    }
+    #btnModificar{
+        width: 94%;
+    }
+}
+
+/*estilos para el perfil del administrador*/
+
+#contenidoPerfil{
+    width: 100%;
+    margin-top: 15px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+#izquierda{
+    float: left;
+    width: 29.3%;
+}
+#izquierda img{
+    width: 180px;
+    height: 180px;
+}
+#derecha{
+    float: right;
+    display: inline-block;
+    width: 68%;
+    height: 180px;
+    font-family: helvetica;
+}
+
+#derecha #nombre{
+    color: #8986FC;
+}
+#derecha h4{
+    margin-bottom: 25px;
+}
+#derecha h2{
+    font-family: monospace;
+    font-size: 27px;
+    color: #20C34D;
+    margin-bottom: 6px;
+}
+#derecha h3{
+    font-family: inherit;
+    font-size: 22px;
+    font-weight: unset;
+    color: ;
+}
+
+
+
+
+
+/*
+#btnModificar{
+    margin-right: 4px;
+    margin-left: 4px;
+    height: 30px;
+    background-color: #FFF443;
+    border:1px solid #F5E52D;
+    padding: 0px 2px;
+    font-weight: bold;
+    font-size: 13px;
+}
+#btnModificar:hover{
+    cursor: pointer;
+    background-color: #FFEA00;
+    border:1px solid #D0C73A;
+}
+
+#btnEliminar{
+    height: 30px;
+    background-color: #FFA8A8;
+    border:1px solid #FF0000;
+    padding: 0px 2px;
+    font-weight: bold;
+    font-size: 13px;
+}
+
+#btnEliminar:hover{
+    cursor: pointer;
+    background-color: #FF9797;
+    border:1px solid #DB0000;
+}
+*/

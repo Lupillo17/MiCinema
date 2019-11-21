@@ -1,0 +1,67 @@
+*{
+	margin: 0px;
+	padding: 0px;
+	font-size: 18px;
+	font-family: helvetica;
+}
+body{
+	background-color: black;
+}
+
+form{
+	display: block;
+	margin:40px auto;
+	width: 50%;
+	padding: 8px;
+	box-shadow: 0px 0px 3px 4px #A4A4A4;
+}
+#container h3{
+	color: white;
+	display: flex;
+	justify-content: center;
+	margin-top: 4px;
+}
+input{
+	display: block;
+	height: 30px;
+	width: 80%;
+	margin: 6px auto;
+	text-align: center;
+	box-shadow: 0px 0px 1px 3px #A4A4A4;
+}
+
+a{
+	text-align: right;
+	display: block;
+	width: 80%;
+	margin: 0 auto;
+	color: white;
+	font-weight: bold;
+	padding: 4px;
+}
+a:hover{
+	color: #E7E7E7;
+}
+
+#btn_iniciar{
+	margin-top: 0px;
+	padding: 8px 0px;
+	height: auto;
+}
+#btn_iniciar:hover{
+	cursor: pointer;
+	background-color: #F7F7F7;
+	box-shadow: -1px -1px 1px 2px #A4A4A4;
+}
+
+#btb_registrarse{
+	margin-top: 18px;
+	padding: 8px 0px;
+	height: auto;
+}
+#btb_registrarse:hover{
+	cursor: pointer;
+	background-color: #F7F7F7;
+	box-shadow: -1px -1px 1px 2px #A4A4A4;
+}
+
